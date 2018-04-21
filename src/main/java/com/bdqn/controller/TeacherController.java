@@ -22,6 +22,9 @@ public class TeacherController {
     @Autowired
     private TeacherService teacherService;
 
+
+
+
     @RequestMapping("/page")
     @ResponseBody
     public PageInfo<Teacher> list(Model model ,@RequestBody TeacherDto teacherDto){

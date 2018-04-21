@@ -2,6 +2,9 @@ package com.bdqn.model;
 
 import java.io.Serializable;
 
+/**
+ * 用户实体类，用于登录
+ */
 public class User implements Serializable {
     private String username;
 
