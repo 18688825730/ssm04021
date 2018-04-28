@@ -34,10 +34,10 @@ public class TeacherController {
 
         PageInfo<Teacher> pageInfo = teacherService.listPage(t,page.getPageNum()+1,page.getPageSize());
 
-        for (Teacher t2:pageInfo.getList()){
+       /* for (Teacher t2:pageInfo.getList()){
 
             System.out.println(t2.getDept().getName() + t2.getPosition().getName() + t2.getName());
-        }
+        }*/
         return pageInfo;
     }
 
@@ -69,8 +69,6 @@ public class TeacherController {
             msg = "删除成功";
         }
         map.put("msg",msg);
-
         return map;
     }
-
 }
